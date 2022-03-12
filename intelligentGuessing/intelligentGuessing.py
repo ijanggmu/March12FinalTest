@@ -26,7 +26,5 @@ elif d_lastname:
         pattern = ''.join([pattern, '<11>','<20>'])
     elif d_firstname == email_name[0] and d_lastname.split(' ')[1] == email_name[1]:
         pattern = ''.join([pattern, '<11>','<21>'])
-elif d_firstname == email_name[0] and d_lastname == '' and email_name[1] in lastname:
+else d_firstname == email_name[0] and d_lastname == '' and email_name[1] in lastname:
     pattern = ''.join([pattern, '<11>','<20><21>'])
-else:
-    print('error')
